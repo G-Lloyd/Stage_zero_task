@@ -1,0 +1,116 @@
+#1
+echo "Ovie_Lloyd-Ade"
+
+#2
+mkdir Ovie_lloydade
+
+#3
+mkdir biocomputing && cd biocomputing
+
+#4
+wget https://raw.githubusercontent.com/josoga2/dataset-repos/main/wildtype.fna
+wget https://raw.githubusercontent.com/josoga2/dataset-repos/main/wildtype.gbk
+wget https://raw.githubusercontent.com/josoga2/dataset-repos/main/wildtype.gbk
+
+#5
+mv wildtype.fna Ovie_lloydade
+
+#6
+rm wildtype.gbk
+
+#7
+if grep -q "tatata" wildtype.fna; then
+  echo "Mutant file"
+
+elsif grep -q "tata" wildtype.fna; then
+  echo "Wild type file"
+fi
+
+#8
+if  grep -q "tatata" wildtype.fna; then
+  echo "Mutant file" 
+  print "Mutant file" >> results.txt
+elsif stop
+
+#9
+history |wc -l wildtype.gbk
+
+#10
+grep "LOCUS" wildtype.gbk | awk {print $3}
+
+#11
+grep "SOURCE" wildtype.gbk
+
+#12
+ grep '/gene' wildtype.gbk
+
+#13
+clear
+
+#14
+ls 
+
+
+
+
+
+
+
+#Project 2
+
+
+#Download the installer
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+
+#Run the installer
+bash Miniconda3-latest-Linux-x86_64.sh
+#Press ENTER to continue
+#Type yes to agree to the license
+#Press ENTER to confirm the installation location
+    
+   
+
+#Task1
+#Activate your conda by closing and re opening the terminal, then run 
+ conda--version
+    #this is to check if conda is installed and to activate it; if a set of number shows, it is activated
+
+#Task2
+conda create -n funtools
+
+#Task3
+conda activate funtools
+#this is to activate the environment you just created
+
+#Task4
+conda install -c figlets
+
+#Task5
+`figlets "Ovie_Lloyd-Ade"`
+#this is to print your name in a fancy way
+
+#Task6
+conda install bwa
+
+#Task7
+conda install blast
+
+#Task8
+conda install samtools
+
+#Task9
+conda install bedtools
+
+#Task10
+conda intall spades.py
+
+#Task11
+conda install bcftools
+
+#Task12
+conda install fastp
+
+#Task13
+conda install multiqc
+
+
