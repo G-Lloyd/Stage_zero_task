@@ -22,7 +22,7 @@ rm wildtype.gbk
 if grep -q "tatata" wildtype.fna; then
   echo "Mutant file"
 
-elsif grep -q "tata" wildtype.fna; then
+elif grep -q "tata" wildtype.fna; then
   echo "Wild type file"
 fi
 
@@ -30,13 +30,14 @@ fi
 if  grep -q "tatata" wildtype.fna; then
   echo "Mutant file" 
   print "Mutant file" >> results.txt
-elsif stop
+elif stop
 
 #9
-history |wc -l wildtype.gbk
+tail –n  +2 wildtype.gbk.1 | wc -l
 
 #10
-grep "LOCUS" wildtype.gbk | awk {print $3}
+awk ‘/LOCUS/ {print $3}’ wildtype.gbk
+
 
 #11
 grep "SOURCE" wildtype.gbk
